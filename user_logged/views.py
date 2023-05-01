@@ -6,6 +6,15 @@ from django.urls import reverse
 # Create your views here.
 
 def user_login(request):
+    """Logs in a user if the provided credentials are valid.
+
+    If the login is successful, the user is redirected to the home page.
+    If the login fails, the user is redirected to the login page with an error message.
+
+    :param HttpRequest request: The HTTP request object
+    :returns: The HTTP response object
+    :rtype: HttpResponse
+    """
     if request.method == 'POST':
         # Login form submitted
         username = request.POST['username']
@@ -25,6 +34,15 @@ def user_login(request):
         return render(request, 'authentication/login.html')
 
 def authenticate_user(request):
+    """Authenticates a user based on the provided credentials.
+
+    If the authentication is successful, the user is redirected to the home page.
+    If the authentication fails, the user is redirected to the login page.
+
+    :param HttpRequest request: The HTTP request object
+    :returns: The HTTP response object
+    :rtype: HttpResponse
+    """
     username = request.POST['username']
     password = request.POST['password']
     user = authenticate(username=username, password=password)
