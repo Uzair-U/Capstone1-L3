@@ -1,0 +1,56 @@
+h1 {
+    text-align: center;
+    font-family: 'Shantell Sans';
+    font-size: 50px;
+    color: orange;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid orange;
+    font-size: 16px;
+  }
+  
+  button[type="submit"] {
+    background-color: orange;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Shantell Sans';
+  }
+  
+  button[type="submit"]:hover {
+    background-color: orange;
+  }
+  
+  .errorlist {
+    color: #f44336;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .errorlist li {
+    font-size: 14px;
+  }

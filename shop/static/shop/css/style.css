@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f1f3f4;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.top-nav-bar{
+    height: 57px;
+    top: 0;
+    position: sticky;
+    background: #fff;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.logo{
+    height: 125px;
+    width: 265px;
+    margin: 5px 10px;
+}
+
+.form-control{
+    margin-top: 75px;
+    margin-left: 30px;
+    border: 2px solid orange !important;
+    border-bottom: 4px solid orange !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    box-shadow: gray !important;
+}
+
+.input-group-text{
+    background: orange !important;
+    border: 2px solid orange !important;
+    margin: 75px 10px 70px 0 !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    cursor: pointer;
+}
+
+.search-box{
+    display: inline-flex;
+    width: 60%;    
+}
+
+.fa-search{
+    color: #f1f3f4;
+}
+
+.menu-bar{
+    margin-top: 65px;
+    width: 40%;
+    height: 57%;
+    float: right;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    float: right;
+}
+
+.menu-bar ul li{
+    font-family: 'Shantell Sans', cursive;
+    border-left: 1px solid #fff;
+    list-style-type: none;
+    padding: 15px 35px;
+    text-align: center;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.menu-bar ul li a{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 980px){
+    .top-nav-bar{
+        height: 118px;
+        border-bottom: 0;
+    }
+    .search-box{
+        width: 100%;
+    }
+    .menu-bar{
+        width: 100%;
+    }
+    .menu-bar ul{
+        margin: 10px 0;
+        width: 100%;
+    }
+    .menu-bar ul li{
+        height: 57px;
+        width: 100%;
+    }
+}
+    
+.card-img-top:hover{
+  transform: scale(1.1); /* increases image size by 10% on hover */
+  }

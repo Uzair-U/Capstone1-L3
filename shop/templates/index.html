@@ -1,0 +1,171 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get It</title>
+
+    <link rel="stylesheet" href="{% static 'shop/css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap');
+        </style>
+    
+</head>
+
+<body>
+    <div class="top-nav-bar">
+    <div class="search-box">
+    <img src="{% static 'shop/Shop Logo.png' %}" alt="" class="logo">
+    <input type="text" class="form-control" placeholder="Search for an item here ...">
+    <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i>></span>
+    </div>
+
+    <div class="menu-bar">
+        <ul>
+            <li><a href="#">Cart</a></li>
+            <li><a href="{% url 'user_registration:register_user' %}">Sign up</a></li>
+            <li><a href="{% url 'user_logged:login' %}">Log In</a></li>
+        </ul>
+    </div>
+<div class="container">
+    <h1 class="my-4">Welcome to our Online Store</h1>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="{% static 'shop/bag.jpeg' %}" class="card-img-top product-img" alt="Kids Backpack">
+          <div class="card-body">
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">R199-99</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="{% static 'shop/bin.jpeg' %}" class="card-img-top product-img" alt="Room Bin">
+          <div class="card-body">
+            <h5 class="card-title">Room Bin</h5>
+            <p class="card-text">R89-99</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="{% static 'shop/calc.jpeg' %}" class="card-img-top product-img" alt="Scientific Calculator">
+          <div class="card-body">
+            <h5 class="card-title">Scientific Calculator</h5>
+            <p class="card-text">R320-00</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="{% static 'shop/pencil case.jpeg' %}" class="card-img-top product-img" alt="Pencil Case">
+          <div class="card-body">
+            <h5 class="card-title">Pencil Case</h5>
+            <p class="card-text">R49-99</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="{% static 'shop/ruler.jpeg' %}" class="card-img-top product-img" alt="Metal Ruler">
+          <div class="card-body">
+            <h5 class="card-title">Metal Ruler</h5>
+            <p class="card-text">R19-99</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="{% static 'shop/scissor.jpeg' %}" class="card-img-top product-img" alt="Scissor" id="">
+          <div class="card-body">
+            <h5 class="card-title">School Scissor</h5>
+            <p class="card-text">R12-00</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="{% static 'shop/sharpener.jpeg' %}" class="card-img-top product-img" alt="Sharpener">
+          <div class="card-body">
+            <h5 class="card-title">Sharpener</h5>
+            <p class="card-text">R8-99</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="{% static 'shop/fineliners.jpeg' %}" class="card-img-top product-img" alt="Fineliners">
+          <div class="card-body">
+            <h5 class="card-title">Staedler Fineliners</h5>
+            <p class="card-text">R69-99</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="{% static 'shop/erasor.jpeg' %}" class="card-img-top product-img" alt="Eraser">
+          <div class="card-body">
+            <h5 class="card-title">Eraser</h5>
+            <p class="card-text">R6-99</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <form>
+                <div class="form-group row">
+                  <label for="name" class="col-sm-3 col-form-label">Name:</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="email" class="col-sm-3 col-form-label">Email:</label>
+                  <div class="col-sm-9">
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="phone" class="col-sm-3 col-form-label">Phone:</label>
+                  <div class="col-sm-9">
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-9 offset-sm-3">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6">
+                <img style="margin-left: 40px;" src="{% static 'shop/Shop Logo.png' %}" alt="" class="logo">
+                <p style="margin-left: 20px;
+                text-align: center  ;">
+                    123 Balkan Street<br>Johanessburg, South Africa 12345<br>Phone: (+27) 123-4567<br>Email: info@example.com
+                </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+</body>
+</html>
