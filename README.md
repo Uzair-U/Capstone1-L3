@@ -2,7 +2,7 @@
 This repo serves to hold my Capstone project 1 of Level 3 tasks
 
 Description
-This django project is meant to be a e-commerce site that uses django. It has a functional Login and Registration section,with a responsive static webpage.
+This django project is meant to be a e-commerce site that uses django. It has a functional Login and Registration section, with a responsive static webpage.
 
 Prerequisites
 Docker installed on the machine where you want to run the project.
